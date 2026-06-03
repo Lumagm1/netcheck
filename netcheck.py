@@ -41,12 +41,19 @@ def single_host(hostname, flask_status = ''):
     else:
          print_func(save,hostname)
 
-def all():
+def all(flask_status):
     content = device_file()
+    list_of_entries = []
     for content in content:
         ip_name = content.strip()
         save = process_run(ip_name)
-        print_func(save,ip_name)
+        if flask_status:
+            
+            list_of_entries.append(print_func(save,ip_name,None,None,flask_status))
+        else:
+            print_func(save,ip_name)
+    if flask_status:
+        return list_of_entries
 
 def port():
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -87,7 +94,7 @@ if __name__ == "__main__":
         if args.watch:
             watch_timer('a')
         else:
-            all()
+            all(None)
             
     elif args.hostname:
         if args.port:
