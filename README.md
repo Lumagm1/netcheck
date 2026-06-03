@@ -19,61 +19,62 @@ Installation:
 Demo:
     Example 1:
     1.1 In command line type
-        ```bash
-        python3 ./netcheck.py -r 127.0.0.1
-        ```
-    1.2 Output
-    ```json
-    {
-        "hostname": "127.0.0.1",
-        "status": true,
-        "time_stamp": "02/06/26 20:55:09"
-    }
-    ```
-    Example 2:
-    2.1 In command line type
-        ```bash
-        python3 ./netcheck.py -a all
-        ```
-    2.2 Output
-    ```json
-    {
-        "hostname": "127.0.0.1",
-        "status": true,
-        "time_stamp": "02/06/26 21:02:51"
-    }
-    {
-        "hostname": "172.24.80.1",
-        "status": true,
-        "time_stamp": "02/06/26 21:02:54"
-    }
-    {
-        "hostname": "172.24.95.59",
-        "status": true,
-        "time_stamp": "02/06/26 21:02:57"
-    }
-    {
-        "hostname": "199.0.18.18",
-        "status": false,
-        "time_stamp": "02/06/26 21:03:10"
-    }
-    ```
+```bash
+python3 ./netcheck.py -r 127.0.0.1
+```
+1.2 Output
+```json
+{
+"hostname": "127.0.0.1",
+"status": true,
+"time_stamp": "02/06/26 20:55:09"
+}
+```
+Example 2:
+2.1 In command line type
+```bash
+python3 ./netcheck.py -a all
+```
+2.2 Output
 
-    Example 3:
-    3.1 In command line type
-    ```bash
-    python3 ./netcheck.py -r 127.0.0.1 -p 22
-    ```
-    3.2 Output
-    ```json
-    {
-        "hostname": "127.0.0.1",
-        "status": true,
-        "time_stamp": "02/06/26 21:05:11",
-        "Port": "22",
-        "port status": false
-    }
-    ```
+```json
+{
+"hostname": "127.0.0.1",
+"status": true,
+"time_stamp": "02/06/26 21:02:51"
+}
+{
+"hostname": "172.24.80.1",
+"status": true,
+"time_stamp": "02/06/26 21:02:54"
+}
+{
+"hostname": "172.24.95.59",
+"status": true,
+"time_stamp": "02/06/26 21:02:57"
+}
+{
+"hostname": "199.0.18.18",
+"status": false,
+"time_stamp": "02/06/26 21:03:10"
+}
+```
+
+Example 3:
+3.1 In command line type
+```bash
+python3 ./netcheck.py -r 127.0.0.1 -p 22
+```
+3.2 Output
+```json
+{
+"hostname": "127.0.0.1",
+"status": true,
+"time_stamp": "02/06/26 21:05:11",
+"Port": "22",
+"port status": false
+}
+```
 
 
 Commandline arguments:
