@@ -11,7 +11,7 @@ Installation:
      1.Download Repository Files
      2.First install rich
         - In command line type
-            ```
+            ```bash
             pip install -r requirements.txt
             ```
     3.Run in local linux directory
@@ -19,11 +19,11 @@ Installation:
 Demo:
     Example 1:
     1.1 In command line type
-        ```
+        ```bash
         python3 ./netcheck.py -r 127.0.0.1
         ```
     1.2 Output
-    ```
+    ```json
     {
         "hostname": "127.0.0.1",
         "status": true,
@@ -32,11 +32,11 @@ Demo:
     ```
     Example 2:
     2.1 In command line type
-        ```
+        ```bash
         python3 ./netcheck.py -a all
         ```
     2.2 Output
-    ```
+    ```json
     {
         "hostname": "127.0.0.1",
         "status": true,
@@ -61,11 +61,11 @@ Demo:
 
     Example 3:
     3.1 In command line type
-    ```
+    ```bash
     python3 ./netcheck.py -r 127.0.0.1 -p 22
     ```
     3.2 Output
-    ```
+    ```json
     {
         "hostname": "127.0.0.1",
         "status": true,
