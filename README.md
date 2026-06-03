@@ -19,7 +19,9 @@ Installation:
 Demo:
     Example 1:
     1.1 In command line type
-        ```python3 ./netcheck.py -r 127.0.0.1```
+        ```
+        python3 ./netcheck.py -r 127.0.0.1
+        ```
     1.2 Output
     ```
     {
@@ -30,7 +32,9 @@ Demo:
     ```
     Example 2:
     2.1 In command line type
-        ```python3 ./netcheck.py -a all```
+        ```
+        python3 ./netcheck.py -a all
+        ```
     2.2 Output
     ```
     {
@@ -57,7 +61,9 @@ Demo:
 
     Example 3:
     3.1 In command line type
-    ```python3 ./netcheck.py -r 127.0.0.1 -p 22```
+    ```
+    python3 ./netcheck.py -r 127.0.0.1 -p 22
+    ```
     3.2 Output
     ```
     {
