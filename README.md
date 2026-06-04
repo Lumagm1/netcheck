@@ -7,7 +7,7 @@ The python script is able to ping a connection with a in or out of local network
 
 Note: It runs only on linux. 
 
-Installation:
+Installation(CLI):
 
 1. Download Repository Files
 
@@ -17,6 +17,20 @@ Installation:
   ```
 3. Run in local linux directory
 
+Installation(DOCKER):
+
+1. Download Repository Files
+
+2. Run Docker command 
+  ```bash
+  docker build -t netcheck:v1 .
+  ```
+
+Run Container with this command
+
+```bash
+docker build -t netcheck:v1 .
+```
 Demo:
 
 Example 1:
