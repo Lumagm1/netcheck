@@ -1,4 +1,4 @@
-from flask import Flask,jsonify
+from flask import Flask,jsonify,render_template
 from netcheck import single_host,ping_all,watch_timer,port
 app = Flask(__name__)
 
@@ -17,3 +17,7 @@ def single_host_port(host_name,port_num):
 @app.route('/single_host/watch/<host_name>/<int:watch>')
 def single_host_interval(host_name,watch):
     return jsonify(watch_timer('s',watch,True,host_name))
+
+@app.route('/')
+def index():
+    return render_template('index.html')

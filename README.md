@@ -95,7 +95,11 @@ python3 ./netcheck.py -r 127.0.0.1 -p 22
 "port status": false
 }
 ```
+Example 4: Docker Version
 
+4.1 Run Docker Build
+
+4.2 Type this URL BELOW
 
 Commandline arguments:
 
