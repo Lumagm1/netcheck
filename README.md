@@ -100,6 +100,14 @@ Example 4: Docker Version
 4.1 Run Docker Build
 
 4.2 Type this URL BELOW
+```bash
+http://localhost:5000/single_host/google.com
+```
+
+4.3 Output
+```json
+{hostname":"google.com","status":true,"time_stamp":"05/06/26 01:37:53"}
+```
 
 Commandline arguments:
 
