@@ -11,7 +11,7 @@ Installation(CLI):
 
 1. Download Repository Files
 
-2. First install rich
+2. Install Dependencies 
   ```bash
   pip install -r requirements.txt
   ```
